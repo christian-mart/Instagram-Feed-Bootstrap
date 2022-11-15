@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Instagram Feed</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a9823efe95.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i class="fa-brands fa-instagram"></i>&nbsp<strong>Instagram</strong></a>
+            <div class="navItems">
+            <button type="button" class="btn btn-success" id="modal1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Create a new post
+              </button>
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <label for="captionForm" class="form-label">Caption:</label>
+                        <textarea class="form-control" id="captionForm" rows="3"></textarea>
+                        <button type="button" class="btn btn-secondary mt-3" ><i class="fa-solid fa-camera"></i></button>
+                        <button type="button" class="btn btn-secondary mt-3" ><i class="fa-solid fa-location-dot"></i></button>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-success">Publish</button>
+                    </div>
+                  </div>
+                </div>
+              </div>            
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-solid fa-gear"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Accessibility</a></li>
+                  <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                  <li class="border-top border-secondary"><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+    </nav>
+     
+      <ul class="nav nav-tabs justify-content-center mt-5" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+      </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-4 col-md-4"><img class="img-fluid" src="https://th.bing.com/th/id/R.3cf3312f5800551211a77ac46e6ba1c4?rik=hUGFdf0s4ezssg&pid=ImgRaw&r=0"></div>
+              <div class="col-lg-4 col-md-4"><img class="img-fluid" src="https://live.staticflickr.com/2912/13981352255_fc59cfdba2_b.jpg"></div>
+              <div class="col-lg-4 col-md-4"><img class="img-fluid" src="http://static.demilked.com/wp-content/uploads/2018/03/5aaa1cc36581b-funny-weird-wtf-stock-photos-7-5a391ad5a43f9__700.jpg"></div>
+              <div class="col-lg-4 col-md-4"><img class="img-fluid" src="https://www.cira.ca/sites/default/files/2019-12/CIRAstock-207.jpg"></div>
+              <div class="col-lg-4 col-md-4"><img class="img-fluid" src="https://www.bosshunting.com.au/wp-content/uploads/2021/09/Pirate-Stock-Exchange-Harardhere-Somalia-1200x675.jpg"></div>
+              <div class="col-lg-4 col-md-4"><img class="img-fluid" src="https://hs.sbcounty.gov/cn/Photo%20Gallery/Sample%20Picture%20-%20Koala.jpg"></div>
+              <div class="col-lg-4 col-md-4"><img class="img-fluid" src="https://strategylab.ca/wp-content/uploads/2016/01/Stock-Photos-are-the-worst.jpg"></div>
+              <div class="col-lg-4 col-md-4"><img class="img-fluid" src="https://i0.wp.com/floridatraveler.com/wp-content/uploads/2017/04/Tampa-Skyline-DSC_4660.jpg?fit=1800%2C980&ssl=1"></div>
+              <div class="col-lg-4 col-md-4"><img class="img-fluid" src="https://www.pbs.org/wgbh/nova/media/images/universe-milky-way-img.width-2000.jpg"></div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+          <div class="container-fluid">
+          <div class="card w-50 h-50 mt-5">
+            <div class="card-header d-flex">
+              <h3>Cold Morning in Switzerland town</h3>
+              <p class="ms-auto text-secondary">08/26</p>
+            </div>
+            <img src="https://th.bing.com/th/id/R.3cf3312f5800551211a77ac46e6ba1c4?rik=hUGFdf0s4ezssg&pid=ImgRaw&r=0" alt="...">
+            <div class="card-footer pb-4">
+              <p class="card-title"><strong>689 Likes</strong></p>
+              <p class="card-text">A winter stroll through a small Switzerland will bring you peace. Your lungs will be eternally grateful when you absorb the fresh and impeccable air of these mountains. </p>
+            </div>
+          </div>
+          <div class="card w-50 h-50 mt-5">
+            <div class="card-header d-flex">
+              <h3>The City of Love!</h3>
+              <p class="ms-auto text-secondary">11/15</p>
+            </div>
+            <img src="https://live.staticflickr.com/2912/13981352255_fc59cfdba2_b.jpg" alt="...">
+            <div class="card-footer pb-4">
+              <p class="card-title"><strong>15690 Likes</strong></p>
+              <p class="card-text">Oh Paris... Timeless and chaotic city that lives in almost everyone's imagination. Getting lost in the streets of the French capital should be a must in people's bucket list. Unforgettable experience. </p>
+            </div>
+          </div>
+          <div class="card w-50 h-50 mt-5">
+            <div class="card-header d-flex">
+              <h3>Mondays, Amirite?</h3>
+              <p class="ms-auto text-secondary">10/31</p>
+            </div>
+            <img src="http://static.demilked.com/wp-content/uploads/2018/03/5aaa1cc36581b-funny-weird-wtf-stock-photos-7-5a391ad5a43f9__700.jpg" alt="...">
+            <div class="card-footer pb-4">
+              <p class="card-title"><strong>248 Likes</strong></p>
+              <p class="card-text">Who was gonna tell me the start of the week got increasingly annoying the older I got? Like if you also feel like this little kid at this moment ahhh. </p>
+            </div>
+          </div>
+          <div class="card w-50 h-50 mt-5">
+            <div class="card-header d-flex">
+              <h3>Being Strange Gets You Attention</h3>
+              <p class="ms-auto text-secondary">11/01</p>
+            </div>
+            <img src="https://www.cira.ca/sites/default/files/2019-12/CIRAstock-207.jpg" alt="...">
+            <div class="card-footer pb-4">
+              <p class="card-title"><strong>393029 Likes</strong></p>
+              <p class="card-text">Do you consider yourself a strange individual but are afraid to be yourself in public? Well, you're in luck! As this pic shows, people will find you interesting and there's a chance that you will receive more attention by being genuine. </p>
+            </div>
+          </div>
+          <div class="card w-50 h-50 mt-5">
+            <div class="card-header d-flex">
+              <h3>Somali Pirates Are Not Gone</h3>
+              <p class="ms-auto text-secondary">09/29</p>
+            </div>
+            <img src="https://www.bosshunting.com.au/wp-content/uploads/2021/09/Pirate-Stock-Exchange-Harardhere-Somalia-1200x675.jpg" alt="...">
+            <div class="card-footer pb-4">
+              <p class="card-title"><strong>969 Likes</strong></p>
+              <p class="card-text">It would seem like Somali pirates are not a prevalent threat in the Indian Ocean, since they haven't been in the news for years. They are still active, though. A very strong force of criminality. </p>
+            </div>
+           </div>
+           <div class="card w-50 h-50 mt-5">
+            <div class="card-header d-flex">
+              <h3>Koala in HD</h3>
+              <p class="ms-auto text-secondary">05/06</p>
+            </div>
+            <img src="https://hs.sbcounty.gov/cn/Photo%20Gallery/Sample%20Picture%20-%20Koala.jpg" alt="...">
+            <div class="card-footer pb-4">
+              <p class="card-title"><strong>20455 Likes</strong></p>
+              <p class="card-text">The New iPhone 14 camera will immerse you in your memories of the place where the picture was taken. When will this continous improvement end? This is the favorite pic I've taken so far. </p>
+            </div>
+            </div>
+            <div class="card w-50 h-50 mt-5">
+              <div class="card-header d-flex">
+                <h3>Groundbreaking Business Meeting</h3>
+                <p class="ms-auto text-secondary">12/31</p>
+              </div>
+              <img src="https://strategylab.ca/wp-content/uploads/2016/01/Stock-Photos-are-the-worst.jpg" alt="...">
+              <div class="card-footer pb-4">
+                <p class="card-title"><strong>57 Likes</strong></p>
+                <p class="card-text">Some companies are discussing the true worth of stock photos' use in our daily lives. Predictions say that their rate of use is set to increase a 150% in the next 5 years... </p>
+              </div>
+            </div>
+            <div class="card w-50 h-50 mt-5">
+              <div class="card-header d-flex">
+                <h3>Guess Which Downtown</h3>
+                <p class="ms-auto text-secondary">07/09</p>
+              </div>
+              <img src="https://i0.wp.com/floridatraveler.com/wp-content/uploads/2017/04/Tampa-Skyline-DSC_4660.jpg?fit=1800%2C980&ssl=1" alt="...">
+              <div class="card-footer pb-4">
+                <p class="card-title"><strong>6044 Likes</strong></p>
+                <p class="card-text">Comment down below which downtown skyline this picture is showing. You'll need luck since most American downtowns look as dull and repetitive as the next. </p>
+              </div>
+            </div>
+            <div class="card w-50 h-50 mt-5">
+              <div class="card-header d-flex">
+                <h3>The Universe Closer Than Ever</h3>
+                <p class="ms-auto text-secondary">11/04</p>
+              </div>
+              <img src="https://www.pbs.org/wgbh/nova/media/images/universe-milky-way-img.width-2000.jpg" alt="...">
+              <div class="card-footer pb-4">
+                <p class="card-title"><strong>10001 Likes</strong></p>
+                <p class="card-text">We have the pleasure of living in a time where we have the possibility of knowing more and more about our universe. Look at this amazing pic of a galaxy from Orion and comment how speechless you are. </p>
+              </div>
+            </div>
+            
+      </div>
+    
+
+
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
